@@ -12,17 +12,16 @@ public class Program { // Testando como metodos estaticos não necessitam ser in
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Calculator calculator = new Calculator();
 
         System.out.print("Enter radius: ");
         double radius = sc.nextDouble();
 
-        double c = calculator.circumference(radius);
-        double v = calculator.volume(radius);
+        double c = Calculator.circumference(radius);
+        double v = Calculator.volume(radius);
 
         System.out.printf("Cincumference: %.2f%n", c);
         System.out.printf("Volume: %.2f%n", v);
-        System.out.println("Pi value: " + calculator.PI);
+        System.out.println("Pi value: " + Calculator.PI);
         sc.close();
     }
 //    public static double circumference(double radius){
